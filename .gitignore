@@ -1,0 +1,7 @@
+.env
+.venv
+data/*
+notebooks/**/_*
+*.egg-info/
+__pycache__/
+*.pyc

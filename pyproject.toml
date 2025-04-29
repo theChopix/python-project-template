@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "python-project-template"
+description = "python project template"
+version = "1.0"
+dependencies = [
+    "pip-tools",
+    "python-dotenv",
+    "pydantic",
+    "ipykernel",
+]
+
+[tools.setuptools.packages.find]
+where = ["src"]
