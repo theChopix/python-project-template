@@ -11,4 +11,4 @@ compile:
 sync:
 	$(PYTHON) -m piptools sync requirements.txt
 
-up: complie sync
+up: compile sync
