@@ -7,7 +7,7 @@ class Collection:
     
     def __init__(self, collection_name: str):
         self.collection_name = collection_name
-        self.collection = MongoClient[config.DB_STRING][config.DB_NAME][collection_name]
+        self.collection = MongoClient(config.DB_STRING)[config.DB_NAME][collection_name]
 
     def insert_document(self, document):
         """Insert a single document into the collection."""
